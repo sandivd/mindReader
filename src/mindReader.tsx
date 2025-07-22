@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './mindReader.css'; 
+import explosionGif from './explosion.gif';
 
 const loadingMessages = [
   "READING YOUR MIND....",
@@ -68,7 +69,7 @@ export default function MindReader() {
         {/* The explosion covers the top section when finished */}
         {isFinished && (
           <div className="explosion-container">
-            <img src="/explosion.gif" alt="explosion" className="explosion" />
+            <img src={explosionGif} alt="explosion" className="explosion" />
           </div>
         )}
 
