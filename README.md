@@ -1,6 +1,6 @@
 # Mind Reader - A Parody Web App
 
-[![Website](https://img.shields.io/badge/Website-online-brightgreen)](https://sandivd.github.io/mindReader/)
+[![Live Demo](https://img.shields.io/badge/Website-online-brightgreen)](https://sandivd.github.io/mindReader/)
 
 A fun, interactive web application that humorously pretends to read the user's mind using a dynamic loading sequence and a fun reveal.
 
