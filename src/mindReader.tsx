@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './MindReader.css'; // We will create this CSS file next
++ import './mindReader.css'; 
 
 const loadingMessages = [
   "READING YOUR MIND....",
