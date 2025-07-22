@@ -1,5 +1,6 @@
+/* Add a dark background to the whole page */
 body {
-  background-color: #f0f2f5;
+  background-color: #111827; /* Dark Gray */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
@@ -15,19 +16,22 @@ body {
 }
 
 .mind-reader-box {
-  background: white;
+  /* Darker box background */
+  background: #1f2937; /* Darker Gray */
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #374151; /* Subtle border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   width: 100%;
   max-width: 600px;
-  position: relative; /* Needed for the explosion positioning */
-  overflow: hidden; /* Helps contain elements */
+  position: relative;
+  overflow: hidden;
 }
 
 .input-section h1 {
   font-size: 2em;
-  color: #333;
+  /* Lighter text color for dark background */
+  color: #f9fafb; /* Off-white */
   margin-bottom: 30px;
 }
 
@@ -36,7 +40,10 @@ body {
   padding: 10px;
   width: 200px;
   text-align: center;
-  border: 1px solid #ccc;
+  /* Dark input with light text */
+  background-color: #374151;
+  color: #f9fafb;
+  border: 1px solid #4b5563;
   border-radius: 8px;
   margin-bottom: 20px;
   display: block;
@@ -47,15 +54,17 @@ body {
 .input-section button {
   font-size: 1.2em;
   padding: 10px 20px;
-  border: 1px solid #ccc;
-  background-color: #f8f9fa;
+  /* Dark button with light text */
+  background-color: #4b5563;
+  color: #f9fafb;
+  border: 1px solid #6b7280;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
 .input-section button:hover:not(:disabled) {
-  background-color: #e9ecef;
+  background-color: #6b7280;
 }
 
 .input-section button:disabled {
@@ -65,12 +74,13 @@ body {
 
 .loading-section {
   margin-top: 30px;
-  height: 80px; /* Reserve space to prevent layout shift */
+  height: 80px;
 }
 
 .progress-bar-container {
   width: 100%;
-  background-color: #e9ecef;
+  /* Darker background for progress bar */
+  background-color: #374151;
   border-radius: 20px;
   height: 30px;
   overflow: hidden;
@@ -79,22 +89,25 @@ body {
 
 .progress-bar {
   height: 100%;
-  background-color: #28a745;
+  /* A brighter green for better contrast */
+  background-color: #4ade80;
   border-radius: 20px;
   transition: width 0.4s ease-in-out;
 }
 
 .status-message {
   font-size: 1.1em;
-  color: #555;
+  /* Light gray for status text */
+  color: #d1d5db;
   font-weight: 500;
-  min-height: 24px; /* Reserve space */
+  min-height: 24px;
 }
 
 .result-message {
   margin-top: 20px;
   font-size: 1.8em;
-  color: #222;
+  /* Off-white for result text */
+  color: #f9fafb;
   animation: fadeIn 1s ease-in;
 }
 
@@ -103,11 +116,11 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%; /* Cover the top part of the box */
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  pointer-events: none; /* Allows clicks to go through if needed */
+  pointer-events: none;
 }
 
 .explosion {
@@ -115,6 +128,8 @@ body {
   max-height: 100%;
   transform: scale(1.5);
   animation: fadeIn 0.5s ease;
+  /* Make the explosion pop more on a dark background */
+  filter: brightness(1.2);
 }
 
 .hidden-by-explosion {
