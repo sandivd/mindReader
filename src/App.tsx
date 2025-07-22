@@ -1,5 +1,5 @@
 import React from 'react';
-import MindReader from './mindReader.tsx'; // Or whatever you named the file
+import MindReader from './mindReader';
 
 function App() {
   return (
