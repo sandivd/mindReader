@@ -6,7 +6,7 @@ import About from './About';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/mindReader">
       <Layout>
         <Routes>
           <Route path="/" element={<MindReader />} />
