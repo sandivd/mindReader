@@ -6,11 +6,13 @@ A fun, interactive web application that humorously pretends to read the user's m
 
 ## ✨ Features
 
+-   **Neo-Brutalist Design:** A bold, high-contrast aesthetic with hard shadows and vibrant colors.
 -   **Interactive "Mind Reading":** Enter any number and watch the app "work its magic."
 -   **Dynamic Loading Sequence:** A progress bar that fills up over time to build anticipation.
 -   **Humorous Status Messages:** A series of funny, fake steps the app is "taking" to read your mind.
 -   **Animated Reveal:** A fun explosion GIF reveals the "correct" number at the end.
--   **Sleek Dark Mode:** A non-toggleable dark theme for a modern and focused look.
+-   **About Page:** A dedicated page explaining the "tech" behind the magic (it's just algorithms).
+-   **Dark Mode:** A toggleable dark theme for a modern and focused look.
 
 ## 🤖 Development Approach: Vibe Coding
 
@@ -24,7 +26,8 @@ This approach allowed for rapid prototyping and iteration, focusing on the overa
 
 -   **React:** A JavaScript library for building user interfaces.
 -   **TypeScript:** Adds static typing to JavaScript to improve code quality and developer experience.
--   **CSS3:** Used for all styling and keyframe animations.
+-   **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+-   **CSS3:** Used for custom animations and neo-brutalist styling.
 -   **Create React App:** Used as the initial project boilerplate.
 
 ## 🚀 Getting Started
