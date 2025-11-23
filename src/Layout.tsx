@@ -129,7 +129,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
 
             {/* Main Content */}
-            <main className="pt-32 pb-20 px-4 min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+            <main className="pt-16 pb-20 px-4 min-h-screen flex flex-col items-center justify-start relative overflow-hidden">
                 <div className="absolute inset-0 grid-bg opacity-50 pointer-events-none"></div>
                 {children}
             </main>

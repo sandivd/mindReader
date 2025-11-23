@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div className="w-full max-w-4xl mx-auto p-4 space-y-12">
             {/* Header Section */}
-            <div className="bg-neo-yellow border-3 border-neo-text p-8 shadow-hard-xl transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+            <div className="bg-neo-yellow border-3 border-neo-text p-8 shadow-hard-xl transform -rotate-1 hover:rotate-0 transition-transform duration-300 brutal-card">
                 <h1 className="font-display font-black text-5xl md:text-7xl mb-4 leading-none">
                     WHAT IS THIS?
                 </h1>
@@ -40,7 +40,7 @@ export default function About() {
             </div>
 
             {/* Credits */}
-            <div className="bg-neo-purple border-3 border-neo-text p-8 text-white text-center shadow-hard transform rotate-1 hover:rotate-0 transition-transform duration-300">
+            <div className="bg-neo-purple border-3 border-neo-text p-8 text-white text-center shadow-hard transform rotate-1 hover:rotate-0 transition-transform duration-300 brutal-card">
                 <h3 className="font-display font-black text-4xl mb-4">CREATED BY</h3>
                 <div className="flex flex-wrap justify-center gap-4">
                     <a

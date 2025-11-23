@@ -84,6 +84,7 @@ export default function MindReader() {
               type="number"
               value={numberInput}
               onChange={(e) => setNumberInput(e.target.value)}
+              onKeyDown={(e) => e.key === 'Enter' && handleReadMind()}
               placeholder="ENTER NUMBER"
               disabled={isLoading}
               className="w-full bg-neo-bg border-3 border-neo-text p-4 font-bold text-2xl text-center focus:outline-none focus:shadow-hard transition-shadow focus:bg-neo-yellow placeholder:text-gray-400"
@@ -116,7 +117,7 @@ export default function MindReader() {
         {/* Final Result */}
         {isFinished && (
           <div className="mt-8 text-center relative z-30 animate-float">
-            <h2 className="font-display font-black text-3xl md:text-5xl bg-neo-yellow border-3 border-neo-text p-4 shadow-hard inline-block transform -rotate-2">
+            <h2 className="font-display font-black text-2xl md:text-4xl bg-neo-yellow border-3 border-neo-text p-4 shadow-hard inline-block transform -rotate-2">
               You were thinking of the NUMBER {finalNumber} 🤯😱
             </h2>
           </div>
